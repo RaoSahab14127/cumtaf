@@ -1,3 +1,4 @@
+
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from .managers import customUserManager
@@ -10,3 +11,4 @@ class CustomUser(AbstractUser):
     REQUIRED_FIELDS = []
 
     objects = customUserManager()
+
